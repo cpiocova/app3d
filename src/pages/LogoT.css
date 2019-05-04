@@ -1,0 +1,64 @@
+#canvas-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#canvasLogo {
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* flex: 1 0 75%; */
+}
+
+
+#canvasLogo, #canvas-wrapper {
+    /* width: 500px; */
+}
+
+.canvasController {
+    height: 450px;
+    width: 300px;
+    margin: 0 20px 0 0;
+    background: #9ea09e;
+    box-sizing: border-box;
+    font-size: 13px;
+    /* flex: 1 0 25%; */
+}
+
+.header-canvasController {
+    background: #333333;
+    color: white;
+    text-align: center;
+}
+
+.body-canvasController {
+    color:  white;
+    font-size: 15px;
+    padding: 6%;
+}
+
+select, input {
+    margin-left: 10px;
+}
+
+input {
+    margin-top: 5px;
+}
+
+.header-canvasController {
+    padding: 5px;
+}
+
+.leyend {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leyend > span {
+    display: block;
+}

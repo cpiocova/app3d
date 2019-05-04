@@ -1,0 +1,98 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  Margin: 0; 
+  Font-size:20px; 
+  Line-height: 1.3;
+}
+
+  a {
+  color:#048DB3;
+  text-decoration: none;
+  Font-weight: 600;  
+  }
+  
+  .Hero {
+    Background: url('../images/HeroPage.png'); 
+    Height:920px;
+    Background-size: cover;
+    Background-position: center;
+    position: relative;
+  } 
+
+  .Hero svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  
+  .HeroGroup strong{
+    Color: #048DB3;
+  }
+  
+
+ .HeroGroup {
+    Margin: 0 auto; 
+    Max-width: 500px; 
+    padding: 250px 50px;
+    Text-align: center;
+  }
+    .Hero p {
+      Color: #E99921;
+      Font-size: 30 px;
+      Line-height: 1.5;
+      Animation: HeroAnimation 3s forwards cubic-bezier(0.2,0.8,0.2,1);
+    }
+
+    .Hero a {
+      Font-size:17px;
+      Font-weight:600;
+      Color: white;
+      Text-transform: uppercase;
+      Background: rgba(0,0,0,0.7);
+      Padding : 9px 20px;
+      Border: 1px solid rgba (255,255,255,0.25);
+      Border-radius: 20px;
+      }
+
+    .Hero h1{
+      margin: 0;
+      color:#E99921;
+      font-size: 60px;
+      line-height: 1.2;
+      Animation: HeroAnimation;
+      Animation-duration: 3s;
+      animation-delay: 0.1s;
+      Opacity: 0;
+      Animation-fill-mode: forwards; 
+      Animation-timing-function: cubic-bezier(0.2,0.8,0.2,1);
+    }
+    
+    
+
+    @keyframes HeroAnimation{
+      0% {
+        Opacity: 0;
+        Transform: translateY(20px);
+      }
+      100% {
+       Opacity: 1;
+        Transform: translateY(10px);
+      }
+    }
+
+
+    @media (max-width: 640px){
+
+      .HeroGroup{
+      Padding: 100px 20px;
+      }
+      .Hero h1 {
+      Font-size: 50px;
+      }
+      .Hero p {
+      Font-size: 24px;
+      }
+  }
+  
+ 

@@ -1,0 +1,60 @@
+.Header{
+    Position: fixed;
+    Width: 100%;
+    Padding: 50px 0;
+    z-index: 100;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)
+}
+
+.HeaderScrolled {
+    background: rgba(0,0,0,0.8);
+    padding: 15px 0;
+    backdrop-filter: blur(20px);
+}
+
+.HeaderGroup{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a {
+    color: white;
+    font-weight: 700;
+}
+
+.Header button {
+    Padding: 8px 20px;
+    Font-size: 20px;
+    Background: #048DB3; 
+    Border : none;
+    Font-weight: 700px;
+    Border-radius:10px;
+    Outline: none; 
+    Cursor: pointer; 
+    color: white;
+    transition: 1s;
+}
+
+.Header button:hover {
+    Transform: translateY(-3px);
+	Background: rgb(14, 8, 8);
+	Box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+
+@media (max-width: 640px){
+    .Header{
+        padding: 15px 0;
+    }
+    .HeaderGroup {
+        grid-template-columns: repeat(2,auto);
+    }
+    .Header a:nth-child(2){
+        display: none;
+    }
+}
+

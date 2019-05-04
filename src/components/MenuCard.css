@@ -1,0 +1,172 @@
+.MenuCardGroup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 70px 0 20px 0;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+}
+
+/* .MenuCard-wrap {
+    padding-top: 100px;
+} */
+
+.MenuCard-nav {
+    position: relative;
+    /* height: 23px; */
+    overflow: hidden; 
+}
+
+.MenuCard-nav-inner {
+    height: 40px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 25px;
+}
+
+.MenuCard-nav-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 12px;
+    color: #b4b5b4;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1;
+    
+    white-space: nowrap;
+    transition: color .2s;  
+    cursor: pointer; 
+}
+
+.MenuCard-nav-item:hover, .MenuCard-menu-scroll-item:hover {
+    color: black;
+}
+
+.MenuCard-nav-item.-item-active {
+    color: black;
+}
+
+.MenuCard-nav-item:first-child {
+    padding-left: 0;
+}
+
+.MenuCard-menu-scroll {
+    display: none;
+}
+
+.MenuCard-menu-scroll-inner {
+    padding: 0 25px;
+}
+
+.MenuCard-menu-scroll-item {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    color: #b4b5b4;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    white-space: nowrap;
+    transition: color .2s;
+    cursor: pointer;  
+}
+
+.MenuCard-nav-item.-item-active:before {
+    transform: scaleX(1);
+}
+
+
+@media (min-width: 375px) {
+    .MenuCard-nav-item {
+        font-size: 17px;
+    }    
+}
+
+@media (min-width: 768px) {
+    
+    .MenuCardGroup {
+        width: 210px;
+        padding: 0;
+    }
+
+    .MenuCard-wrap {
+        padding-top: 200px;
+    }
+    
+    .MenuCard-nav {
+        height: auto;
+    } 
+
+    .MenuCard-nav-item {
+        display: block;
+        padding: 10px 0;
+        font-size: 20px; 
+    }
+
+    .MenuCard-nav-item:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        height: 1px;
+        width: 18px;
+        margin: -1px 0 0 0;
+        transform: scaleX(0);
+        transform-origin: right center;
+        background: #000;
+        transition: all .2s;
+    }
+
+
+    .MenuCard-nav-inner {
+        display: block;
+        height: auto;
+        margin: -10px 0;
+        padding: 0 40px;
+    }
+
+    .MenuCard-menu-scroll {
+        display: block;
+        margin: 50px 0 0 0; 
+    }
+
+    .MenuCard-menu-scroll-inner {
+        padding: 0 40px;
+    }
+
+
+    .MenuCard-menu-scroll-item:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        height: .5px;
+        width: 18px;
+        margin: -1px 0 0 0;
+        transform: scaleX(0);
+        background: #000;
+        transition: all .2s;     
+    }
+}
+
+@media (min-width: 1024px) {
+    .MenuCardGroup {
+        width: 230px;
+    }
+    
+    .MenuCard-wrap {
+        padding-top: 155px;
+    }
+
+    .MenuCard-nav-item {
+        font-size: 22px;
+    }
+
+    .MenuCard-menu-scroll-item {
+        font-size: 15px;
+    }
+
+}

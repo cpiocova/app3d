@@ -1,0 +1,420 @@
+@import url('../assets/fonts.css');
+
+.Cards {
+    overflow: hidden;
+}
+
+.Cards h2{
+    margin: 50px 20px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(104deg,#050A27 0%,#4A548C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ServicesWrapper {
+    height: 100%;    
+}
+
+.card-description-container {
+    padding: 0 25px;
+}
+
+.card-description-item {
+    padding: 25px 0;
+    margin: 0 30px;
+}
+
+.card-description-item:first-child {
+    padding: 0 0 25px 0;
+}
+
+.card-description-header {
+    max-width: 660px;
+    overflow: hidden;
+}
+
+.card-header {
+    display: block;
+    white-space: nowrap;
+}
+
+
+.card-header h1 b {
+    display: inline-block;
+    height: 70px;
+    color: #000;
+    font-weight: 400;
+    vertical-align: bottom;   
+}
+
+.card-description-text {
+    margin: 20px 0 0 0;
+}
+
+.card-text-wrapper {
+    font-size: 16px;
+    line-height: 29px;
+    word-wrap: break-word;
+    font-weight: 300;
+    letter-spacing: .01875em;
+    color: #7c7c7c;
+}
+
+.card-text-wrapper p {
+    margin-top: 20px;
+}
+
+
+.CardGroup{
+    padding-top: 150px;
+}
+
+.card-wrapper {
+    padding: 25px 0;
+}
+
+.card-presentation {
+    position: relative;
+    margin: 0 30px 50px 0;
+}
+
+.card-presentation h4 {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px 0 0;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    line-height: 1;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    z-index: 1;
+}
+
+.card-presentation:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    margin: -1px 0 0 0;
+    background: #eff1f4;
+}
+
+.card-content {
+    position: relative;
+}
+
+.card-grid {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.card-grid-left {
+    padding: 10px 0 ;
+}
+
+
+
+.card-title h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+    color: rgba(0,0,0,.99)
+}
+
+
+.card-subtitle{
+    display: none;
+    color: #7c7c7c;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .09px;
+    line-height: 27px;  
+}
+
+.card-subtitle p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    letter-spacing: .13px;
+    line-height: 40px;
+}
+
+.card-tags {
+    margin: 7px 0 0 0;
+    color: #999998;
+    font-size: 14px;
+    letter-spacing: .04px;
+    line-height: 25px;
+}
+
+.card-more {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    color: #031761; 
+}
+
+.button-view-card {
+    position: relative;
+    font-size: 17px;
+    letter-spacing: 1.04px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: 0 0;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1
+}
+
+.zone-view-card {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    border-radius: 30%;
+}
+
+.pos-view-card {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.box-view-card {
+    position: relative;
+    display: block;
+    pointer-events: none;
+}
+
+.text-view-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
+.line-view-card {
+    content: "";
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 100%;
+    transform-origin: left center;
+    transition: bottom .2s;
+}
+
+.card-grid-right {
+    flex: 1 0 50%;
+    perspective: 1000px;
+}
+
+.card-effect {
+    position: relative !important;
+    display: inline-block;
+    margin: 0 0 35px 0;
+    perspective: 650px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.Card {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.Card img {
+    max-width: 100%;
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.775) translateZ(80px);
+}
+
+@media (min-width: 375px) {
+    .card-subtitle {
+        display: block;
+    }
+
+    .card-header h1 {
+        font-size: 27px;
+        font-weight: 300;
+        line-height: 34px;  
+    }
+
+    .card-presentation {
+        margin: 0 30px 70px 30px;
+    }
+
+    .card-grid {
+        padding: 0 30px 30px;
+    }
+    
+    .text-view-card {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    .CardGroup {
+        padding-top: 0;
+        margin-left: 210px;
+    }
+
+    .card-description-wrapper {
+        padding-top: 200px;
+    }
+
+    .card-description-container {
+        padding: 0 40px;
+    }
+
+    .card-description-item {
+        padding: 70px 0;
+        margin: 0px 30px 0 60px;
+    }
+
+    .card-description-item:first-child {
+        padding: 0 0 50px 0;
+    }
+
+
+    .card-header h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .card-description-text {
+        margin: 25px 0 0 0;
+    }
+
+    .card-wrapper {
+        padding: 70px 0;
+    }
+
+    .card-presentation {
+        margin: 0 30px 70px 60px;
+    }
+    
+    .card-grid-left {
+        padding: 0 0 0 45px;
+    }
+
+    .card-title h3 {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 40px;
+    }
+
+    .card-subtitle {
+        font-size: 30px;
+        letter-spacing: .03px;
+        line-height: 40px;
+    }
+    
+    .card-tags {
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        letter-spacing: .7px;
+        line-height: 25px;
+    }
+
+    .card-more {
+        margin: 40px 0 0 0;
+    }
+
+    .card-effect {
+        margin: 15px 0 50px 35px;
+    }
+
+    .text-view-card {
+        font-size: 17px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .CardGroup {
+        margin-left: 230px;
+    }
+
+    .card-description-wrapper {
+        padding-top: 155px;
+    }
+
+    .card-presentation h4 {
+        padding: 0 30px 0 0;
+        font-size: 16.5px;
+    }
+
+    .card-grid-left {
+        padding: 0 0 0 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    
+    .card-description-item{
+        margin: 0px 30px 0 30px;
+    }
+
+    .card-presentation {
+        margin: 0 30px 70px 30px;
+    }
+
+    .card-grid {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .card-grid-col {
+        flex: 1 0 50%;   
+    }
+    
+    .card-grid-left {
+        padding: 10px 0;
+    }
+    
+    .card-grid-right {
+        text-align: right;
+    }
+    
+    .card-effect {
+        margin: 0;
+    }
+}
