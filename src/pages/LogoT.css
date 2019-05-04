@@ -57,6 +57,7 @@ input {
     width: 200px;
     margin: 0 auto;
     text-align: center;
+    font-weight: 900;
 }
 
 .leyend > span {

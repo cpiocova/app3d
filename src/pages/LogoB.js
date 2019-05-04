@@ -63,7 +63,7 @@ class LogoB extends Component {
             motorBabylon = new BABYLON.Engine(elementCanvas, true),
             scene = new BABYLON.Scene(motorBabylon),
             camera = new BABYLON.ArcRotateCamera("Camera", 1, 0.8, 1, new BABYLON.Vector3(0,0,0), scene),
-            light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 2, 10), scene );
+            light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(-3, 1, 1), scene );
             
         this.box1 = new BABYLON.Mesh.CreateBox("Box1", 3, scene);
         this.box1.position = new BABYLON.Vector3(0,0,0);
@@ -271,23 +271,23 @@ class LogoB extends Component {
                             <br/><br/>
 
                             Translate X:
-                            <input className="tRangeX" type="range" min="-10" max="10" step="0.5" value={this.state.boxes[this.state.boxSelectedArray].posX} onChange={this.translateBox}>
+                            <input className="tRangeX" type="range" min="-10" max="10" step="0.1" value={this.state.boxes[this.state.boxSelectedArray].posX} onChange={this.translateBox}>
                             </input> {this.state.boxes[this.state.boxSelectedArray].posX} <br/>
                             Translate Y:
-                            <input className="tRangeY" type="range" min="-10" max="10" step="0.5" value={this.state.boxes[this.state.boxSelectedArray].posY} onChange={this.translateBox}>
+                            <input className="tRangeY" type="range" min="-10" max="10" step="0.1" value={this.state.boxes[this.state.boxSelectedArray].posY} onChange={this.translateBox}>
                             </input> {this.state.boxes[this.state.boxSelectedArray].posY} <br/>
                             Translate Z:
-                            <input className="tRangeZ" type="range" min="-10" max="10" step="0.5" value={this.state.boxes[this.state.boxSelectedArray].posZ} onChange={this.translateBox}>
+                            <input className="tRangeZ" type="range" min="-10" max="10" step="0.1" value={this.state.boxes[this.state.boxSelectedArray].posZ} onChange={this.translateBox}>
                             </input> {this.state.boxes[this.state.boxSelectedArray].posZ} <br/> <br/>
                             
                             Scale X:
-                            <input className="sRangeX" type="range" min="0" max="5" step="0.5" value={this.state.boxes[this.state.boxSelectedArray].scaX} onChange={this.scaleBox}>
+                            <input className="sRangeX" type="range" min="0" max="5" step="0.1" value={this.state.boxes[this.state.boxSelectedArray].scaX} onChange={this.scaleBox}>
                             </input> {this.state.boxes[this.state.boxSelectedArray].scaX} <br/>
                             Scale Y:
-                            <input className="sRangeY" type="range" min="0" max="5" step="0.5" value={this.state.boxes[this.state.boxSelectedArray].scaY} onChange={this.scaleBox}>
+                            <input className="sRangeY" type="range" min="0" max="5" step="0.1" value={this.state.boxes[this.state.boxSelectedArray].scaY} onChange={this.scaleBox}>
                             </input> {this.state.boxes[this.state.boxSelectedArray].scaY} <br/>
                             Scale Z:
-                            <input className="sRangeZ" type="range" min="0" max="5" step="0.5" value={this.state.boxes[this.state.boxSelectedArray].scaZ} onChange={this.scaleBox}>
+                            <input className="sRangeZ" type="range" min="0" max="5" step="0.1" value={this.state.boxes[this.state.boxSelectedArray].scaZ} onChange={this.scaleBox}>
                             </input> {this.state.boxes[this.state.boxSelectedArray].scaZ} <br/> <br/>
 
                             Rotate X:
