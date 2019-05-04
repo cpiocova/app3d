@@ -62,8 +62,8 @@ class LogoB extends Component {
         var elementCanvas = document.getElementById('canvasLogo'),
             motorBabylon = new BABYLON.Engine(elementCanvas, true),
             scene = new BABYLON.Scene(motorBabylon),
-            camera = new BABYLON.ArcRotateCamera("Camera", 1, 0.8, 1, new BABYLON.Vector3(0,0,0), scene),
-            light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(-3, 1, 1), scene );
+            camera = new BABYLON.ArcRotateCamera("Camera", 1, 1, 10, new BABYLON.Vector3(0,0,0), scene),
+            light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 0, 5), scene );
             
         this.box1 = new BABYLON.Mesh.CreateBox("Box1", 3, scene);
         this.box1.position = new BABYLON.Vector3(0,0,0);
